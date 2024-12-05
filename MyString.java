@@ -14,6 +14,15 @@ public class MyString {
         System.out.println(subsetOf("spa","space")); //returns true
         System.out.println(subsetOf("pass","space")); //returns false
         System.out.println(subsetOf("c","space"));  //returns true
+
+        System.out.println("\n" + randomStringOfLetters(4));
+        System.out.println(randomStringOfLetters(4));
+        System.out.println(randomStringOfLetters(5));
+
+        System.out.println("\n" + remove("committee","meet")); // returns comit
+
+        System.out.println(insertRandomly('w', hello));
+
     }
 
     /**
@@ -48,23 +57,19 @@ public class MyString {
      */
     public static boolean subsetOf(String str1, String str2) {
         
-        boolean isIn = false;
         int count = 0;
 
         for (int i = 0; i < str2.length(); i++) {
             for (int j = 0; j < str1.length(); j++) {
                 if (str2.charAt(i) == str1.charAt(j)) {
-                    isIn = true;
                     count++;
                     break;
                 }
             }
-            if (!isIn) return false;
-            if (count == str1.length()) return true;
-            isIn = false;
         }
 
-        return true;
+        if (count == str1.length()) return true;
+        return false;
     }
 
     /** Returns a string which is the same as the given string, with a space
@@ -127,6 +132,7 @@ public class MyString {
                 if (str1.charAt(i) == str2.charAt(j) && !checkStr2[j]) {
                     isIn = true;
                     checkStr2[j] = true;
+                    break;
                 }
             }
             if (!isIn) s += str1.charAt(i);
@@ -135,6 +141,7 @@ public class MyString {
 
         return s;
     }
+
 
     /**
      * Returns a string consisting of the given string, with the given 
