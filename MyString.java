@@ -66,7 +66,6 @@ public class MyString {
             for (int j = 0; j < temp.length(); j++) {
                 if (str2.charAt(i) == temp.charAt(j)) {
                     temp = remove(temp, "" + temp.charAt(j));
-                    System.out.println(temp);
                     break;
                 }   
             }
