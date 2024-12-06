@@ -145,11 +145,11 @@ public class Scrabble {
 
 	public static void main(String[] args) {
 		// Uncomment the test you want to run
-		testBuildingTheDictionary();  
-		testScrabbleScore();    
-		testCreateHands();  
-		testPlayHands();
-		playGame();
+		// testBuildingTheDictionary();  
+		// testScrabbleScore();    
+		// testCreateHands();  
+		// testPlayHands();
+		// playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
@@ -174,9 +174,10 @@ public class Scrabble {
 		System.out.println(createHand());
 	}
 	public static void testPlayHands() {
-		init();
-		playHand("ocostrza");
-		playHand("arbffip");
-		playHand("aretiin");
-	}
+	// 	init();
+	// 	playHand("ocostrza");
+	// 	playHand("arbffip");
+	// 	playHand("aretiin");
+	// }
+}
 }
