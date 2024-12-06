@@ -14,6 +14,7 @@ public class MyString {
         System.out.println(subsetOf("spa","space")); //returns true
         System.out.println(subsetOf("pass","space")); //returns false
         System.out.println(subsetOf("c","space"));  //returns true
+        System.out.println(subsetOf("runi","running"));  //returns true
 
         System.out.println("\n" + randomStringOfLetters(4));
         System.out.println(randomStringOfLetters(4));
@@ -68,7 +69,7 @@ public class MyString {
             }
         }
 
-        if (count == str1.length()) return true;
+        if (count >= str1.length()) return true;
         return false;
     }
 
