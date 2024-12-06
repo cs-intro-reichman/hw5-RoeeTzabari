@@ -135,6 +135,9 @@ public class Scrabble {
 				playHand(createHand());
 			} 
 			else if (input.equals("e")) break;
+			else {
+				System.out.println("Invalid input.");
+			}
 		}
 	}
 
