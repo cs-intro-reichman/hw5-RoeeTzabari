@@ -103,7 +103,7 @@ public class Scrabble {
 			// non-whitespace characters. Whitespace is either space characters, or  
 			// end-of-line characters.
 			String input = in.readString();
-			if (isWordInDictionary(input)) {
+			if (isWordInDictionary(input) && MyString.subsetOf(input, hand)) {
 				score += wordScore(input);
 				hand = MyString.remove(hand, input);
 			}

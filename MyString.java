@@ -24,6 +24,7 @@ public class MyString {
 
         System.out.println(insertRandomly('w', hello));
 
+
     }
 
     /**
@@ -59,17 +60,19 @@ public class MyString {
     public static boolean subsetOf(String str1, String str2) {
         
         int count = 0;
+        String temp = str1;
 
         for (int i = 0; i < str2.length(); i++) {
-            for (int j = 0; j < str1.length(); j++) {
-                if (str2.charAt(i) == str1.charAt(j)) {
-                    count++;
+            for (int j = 0; j < temp.length(); j++) {
+                if (str2.charAt(i) == temp.charAt(j)) {
+                    temp = remove(temp, "" + temp.charAt(j));
+                    System.out.println(temp);
                     break;
-                }
+                }   
             }
         }
 
-        if (count >= str1.length()) return true;
+        if (temp == "") return true;
         return false;
     }
 
