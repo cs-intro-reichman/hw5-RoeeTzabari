@@ -108,6 +108,7 @@ public class Scrabble {
 				hand = MyString.remove(hand, input);
 			}
 			if (input.equals(".")) break;
+			else System.out.println("Invalid word. Try again.");
 		}
 		if (hand.length() == 0) {
 	        System.out.println("Ran out of letters. Total score: " + score + " points");
