@@ -23,8 +23,6 @@ public class MyString {
         System.out.println("\n" + remove("committee","meet")); // returns comit
 
         System.out.println(insertRandomly('w', hello));
-
-
     }
 
     /**
